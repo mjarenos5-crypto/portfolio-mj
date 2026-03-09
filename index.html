@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maryjoy Areños | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative">
+
+  <!-- Background Blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-opacity-80" style="background: rgba(3, 7, 18, 0.8);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold gradient-text">MARYJOY</a>
+      
+      <div class="hidden md:flex gap-8 items-center">
+        <a href="#personal-info" class="nav-link text-sm">About</a>
+        <a href="#education" class="nav-link text-sm">Education</a>
+        <a href="#skills" class="nav-link text-sm">Skills</a>
+        <a href="#projects" class="nav-link text-sm">Projects</a>
+        <a href="#certificates" class="nav-link text-sm">Certificates</a>
+        <a href="#contact" class="nav-link text-sm">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-btn" class="md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
+        <a href="#personal-info" class="block text-gray-300 hover:text-white">About</a>
+        <a href="#education" class="block text-gray-300 hover:text-white">Education</a>
+        <a href="#skills" class="block text-gray-300 hover:text-white">Skills</a>
+        <a href="#projects" class="block text-gray-300 hover:text-white">Projects</a>
+        <a href="#certificates" class="block text-gray-300 hover:text-white">Certificates</a>
+        <a href="#contact" class="block text-gray-300 hover:text-white">Contact</a>
+    </div>
+  </nav>
+
+  <main class="relative z-10">
+
+    <!-- Hero Section -->
+    <section id="about" class="min-h-screen flex items-center pt-20">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <div class="reveal">
+            <span class="px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-1);">
+              Available for Opportunities
+            </span>
+          </div>
+          
+          <h1 class="reveal reveal-delay-1 text-5xl md:text-7xl font-bold mt-6 leading-tight">
+            Hi, I'm<br>
+            <span class="gradient-text">Maryjoy Areños</span>
+          </h1>
+          
+          <p class="reveal reveal-delay-2 mt-6 text-lg" style="color: var(--muted);">
+            Data Analyst & Web Developer passionate about transforming complex data into clear insights and building beautiful, functional web experiences.
+          </p>
+
+          <div class="reveal reveal-delay-3 mt-8 flex flex-wrap gap-4">
+            <a href="#contact" class="btn-primary">Get In Touch</a>
+            <a href="#projects" class="px-8 py-3 border rounded-lg font-semibold transition-all hover:bg-white hover:bg-opacity-5" style="border-color: var(--border);">
+              View Projects
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal order-1 md:order-2 flex justify-center">
+          <div class="profile-wrapper">
+            <div class="profile-ring"></div>
+            <img 
+              src="https://z-cdn-media.chatglm.cn/files/da476113-32a7-4422-90ac-749f18a346b2.jpg?auth_key=1873041115-d77c00822f4e4cf688718b2fdc214268-0-56067fc1d680bfc4969cd5da5ef71233" 
+              alt="Maryjoy Areños"
+              class="profile-img"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Information Section -->
+    <section id="personal-info" class="py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="reveal text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Personal Information</h2>
+            <div class="w-24 h-1 mx-auto rounded" style="background: var(--gradient-main);"></div>
+        </div>
+
+        <div class="reveal glass rounded-xl p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center">
+            <!-- Left Side: Bio/Intro -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4 gradient-text">About Me</h3>
+                <p class="mb-4" style="color: var(--muted);">
+                    I am a dedicated Data Analyst and Web Developer based in Manila. With a strong foundation in Python and modern web technologies, I bridge the gap between raw data and actionable business solutions.
+                </p>
+                <p style="color: var(--muted);">
+                    My goal is to leverage data to drive decision-making and create seamless digital experiences. I am constantly learning, adapting to new challenges, and striving for optimization in every project I undertake.
+                </p>
+            </div>
+
+            <!-- Right Side: Details Grid -->
+            <div class="grid grid-cols-2 gap-6">
+                <div class="info-item">
+                    <span class="info-label">Full Name</span>
+                    <span class="info-value">Maryjoy Areños</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Birthday</span>
+                    <span class="info-value">May 15, 2002</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Age</span>
+                    <span class="info-value">22 Years Old</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Nationality</span>
+                    <span class="info-value">Filipino</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Manila, Philippines</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Languages</span>
+                    <span class="info-value">English, Filipino</span>
+                </div>
+                <div class="info-item col-span-2">
+                    <span class="info-label">Email</span>
+                    <span class="info-value">maryjoy.arenos@email.com</span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24" style="background: rgba(255,255,255,0.02);">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="reveal text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Education</h2>
+          <p style="color: var(--muted);">My academic journey</p>
+        </div>
+
+        <div class="space-y-12 relative">
+          <!-- Item 1 -->
+          <div class="reveal relative pl-10">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+            <div class="glass rounded-xl p-6">
+              <span class="text-xs font-bold tracking-wider" style="color: var(--accent-1);">2020 - 2024</span>
+              <h3 class="text-2xl font-bold mt-2">BS in Information Technology</h3>
+              <p class="text-md mt-1" style="color: var(--muted); font-style: italic;">University of the East - Manila</p>
+              <p class="mt-3 text-sm" style="color: var(--muted);">Specialized in Data Analytics. Dean's Lister.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="reveal relative pl-10">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+            <div class="glass rounded-xl p-6">
+              <span class="text-xs font-bold tracking-wider" style="color: var(--accent-1);">2018 - 2020</span>
+              <h3 class="text-2xl font-bold mt-2">Senior High School - ICT</h3>
+              <p class="text-md mt-1" style="color: var(--muted); font-style: italic;">San Juan National High School</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="reveal relative pl-10">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+            <div class="glass rounded-xl p-6">
+              <span class="text-xs font-bold tracking-wider" style="color: var(--accent-1);">2014 - 2018</span>
+              <h3 class="text-2xl font-bold mt-2">Junior High School</h3>
+              <p class="text-md mt-1" style="color: var(--muted); font-style: italic;">San Juan National High School</p>
+            </div>
+          </div>
+
+           <!-- Item 4 -->
+           <div class="reveal relative pl-10">
+            <div class="timeline-dot"></div>
+            <div class="glass rounded-xl p-6">
+              <span class="text-xs font-bold tracking-wider" style="color: var(--accent-1);">2008 - 2014</span>
+              <h3 class="text-2xl font-bold mt-2">Elementary</h3>
+              <p class="text-md mt-1" style="color: var(--muted); font-style: italic;">San Juan Elementary School</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="reveal text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Skills</h2>
+          <p style="color: var(--muted);">Technical & Professional Expertise</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Technical Skills -->
+          <div class="reveal glass rounded-xl p-8">
+            <h3 class="text-2xl font-bold mb-6 gradient-text">Technical</h3>
+            <div class="space-y-6">
+              <div class="skill-item" data-value="95">
+                <div class="flex justify-between mb-2"><span>Python</span><span>95%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-item" data-value="90">
+                <div class="flex justify-between mb-2"><span>SQL</span><span>90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-item" data-value="85">
+                <div class="flex justify-between mb-2"><span>JavaScript / React</span><span>85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-item" data-value="80">
+                <div class="flex justify-between mb-2"><span>Data Visualization</span><span>80%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="reveal reveal-delay-1 glass rounded-xl p-8">
+            <h3 class="text-2xl font-bold mb-6 gradient-text">Professional</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="text-center p-4 rounded-lg" style="background: rgba(255,255,255,0.03);">
+                <div class="text-3xl mb-2 gradient-text font-bold">01</div>
+                <h4 class="font-semibold">Willing to Learn</h4>
+              </div>
+              <div class="text-center p-4 rounded-lg" style="background: rgba(255,255,255,0.03);">
+                <div class="text-3xl mb-2 gradient-text font-bold">02</div>
+                <h4 class="font-semibold">Adaptable</h4>
+              </div>
+              <div class="text-center p-4 rounded-lg" style="background: rgba(255,255,255,0.03);">
+                <div class="text-3xl mb-2 gradient-text font-bold">03</div>
+                <h4 class="font-semibold">Problem Solver</h4>
+              </div>
+              <div class="text-center p-4 rounded-lg" style="background: rgba(255,255,255,0.03);">
+                <div class="text-3xl mb-2 gradient-text font-bold">04</div>
+                <h4 class="font-semibold">Optimization</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24" style="background: rgba(255,255,255,0.02);">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="reveal text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Projects</h2>
+          <p style="color: var(--muted);">Selected Work</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="reveal glass rounded-xl overflow-hidden group">
+            <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(139, 92, 246, 0.2));">
+              <svg class="w-16 h-16 opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="var(--accent-1)" stroke-width="1.5">
+                <path d="M3 3v18h18V3H3z"/><path d="M18 9l-5 5-4-4-3 3"/>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Sales Dashboard</h3>
+              <p class="text-sm mt-2" style="color: var(--muted);">Interactive PowerBI dashboard for retail insights.</p>
+              <div class="mt-4 flex gap-2">
+                <span class="px-2 py-1 text-xs rounded" style="background: rgba(255,255,255,0.1);">Python</span>
+                <span class="px-2 py-1 text-xs rounded" style="background: rgba(255,255,255,0.1);">SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="reveal reveal-delay-1 glass rounded-xl overflow-hidden group">
+            <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(244, 63, 94, 0.2));">
+               <svg class="w-16 h-16 opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">E-Commerce Site</h3>
+              <p class="text-sm mt-2" style="color: var(--muted);">Full-stack web application with React & Node.</p>
+              <div class="mt-4 flex gap-2">
+                <span class="px-2 py-1 text-xs rounded" style="background: rgba(255,255,255,0.1);">React</span>
+                <span class="px-2 py-1 text-xs rounded" style="background: rgba(255,255,255,0.1);">Node</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="reveal reveal-delay-2 glass rounded-xl overflow-hidden group">
+            <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(244, 63, 94, 0.2));">
+              <svg class="w-16 h-16 opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="var(--accent-1)" stroke-width="1.5">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Data Pipeline</h3>
+              <p class="text-sm mt-2" style="color: var(--muted);">Automated ETL pipeline for data processing.</p>
+              <div class="mt-4 flex gap-2">
+                <span class="px-2 py-1 text-xs rounded" style="background: rgba(255,255,255,0.1);">Python</span>
+                <span class="px-2 py-1 text-xs rounded" style="background: rgba(255,255,255,0.1);">AWS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="reveal text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Certificates</h2>
+                <p style="color: var(--muted);">Achievements & Credentials</p>
+            </div>
+    
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cert 1 -->
+                <div class="reveal glass rounded-xl p-6 flex items-center gap-4 hover:border-cyan-500">
+                    <div class="p-3 rounded-lg" style="background: rgba(6, 182, 212, 0.1);">
+                        <svg class="w-6 h-6" style="color: var(--accent-1);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Google Data Analytics</h4>
+                        <p class="text-xs" style="color: var(--muted);">Google</p>
+                    </div>
+                </div>
+    
+                <!-- Cert 2 -->
+                <div class="reveal reveal-delay-1 glass rounded-xl p-6 flex items-center gap-4 hover:border-cyan-500">
+                    <div class="p-3 rounded-lg" style="background: rgba(139, 92, 246, 0.1);">
+                        <svg class="w-6 h-6" style="color: var(--accent-2);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Meta Front-End Developer</h4>
+                        <p class="text-xs" style="color: var(--muted);">Meta</p>
+                    </div>
+                </div>
+    
+                <!-- Cert 3 -->
+                <div class="reveal reveal-delay-2 glass rounded-xl p-6 flex items-center gap-4 hover:border-cyan-500">
+                    <div class="p-3 rounded-lg" style="background: rgba(6, 182, 212, 0.1);">
+                        <svg class="w-6 h-6" style="color: var(--accent-1);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Python for Data Science</h4>
+                        <p class="text-xs" style="color: var(--muted);">IBM</p>
+                    </div>
+                </div>
+    
+                <!-- Cert 4 -->
+                <div class="reveal glass rounded-xl p-6 flex items-center gap-4 hover:border-cyan-500">
+                    <div class="p-3 rounded-lg" style="background: rgba(139, 92, 246, 0.1);">
+                        <svg class="w-6 h-6" style="color: var(--accent-2);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">SQL Advanced</h4>
+                        <p class="text-xs" style="color: var(--muted);">DataCamp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24" style="background: rgba(255,255,255,0.02);">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="reveal text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+          <p style="color: var(--muted);">Let's build something amazing together</p>
+        </div>
+
+        <div class="reveal glass rounded-xl p-8 md:p-12">
+          <form id="contact-form" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm mb-2" style="color: var(--muted);">Name</label>
+                <input type="text" class="input-field" placeholder="Your Name" required>
+              </div>
+              <div>
+                <label class="block text-sm mb-2" style="color: var(--muted);">Email</label>
+                <input type="email" class="input-field" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm mb-2" style="color: var(--muted);">Message</label>
+              <textarea rows="5" class="input-field resize-none" placeholder="Your Message..." required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn-primary w-full md:w-auto px-12">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t text-center" style="border-color: var(--border);">
+      <p class="text-sm" style="color: var(--muted);">Designed & Built by Maryjoy Areños &copy; 2024</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
